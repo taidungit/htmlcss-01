@@ -49,6 +49,7 @@ a {
 }
 .hero-wrap {
     display: flex;
+    align-items: center;
     background-color: #e6f0ff;
     height: calc(100vh - 90px);
     position: relative;
@@ -89,9 +90,7 @@ a {
 .action-btn:hover {
     opacity: 0.9;
 }
-.hero {
-    margin-top: 114px;
-}
+
 .hero .info {
     width: 51%;
 }
