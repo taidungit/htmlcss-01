@@ -21,25 +21,30 @@
         />
     </head>
     <body>
-        <main>
-            <!-- =====Header===== -->
-            <header class="header">
+        <main id="home">
+            <header class="fixed-header">
                 <div class="content">
-                    <nav class="nav-bar">
-                        <img src="./assets/img/Logo.svg" alt="" />
+                      <nav class="nav-bar">
+                        <a href="/">  <img src="./assets/img/Logo.svg" alt="" /></a>
 
                         <ul>
-                            <li><a href="#!">Home</a></li>
-                            <li><a href="#!">Services</a></li>
-                            <li><a href="#!">Features</a></li>
-                            <li><a href="#!">Resources</a></li>
-                            <li><a href="#!">Contract</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#resources">Resources</a></li>
+                            <li><a href="#contract">Contract</a></li>
                         </ul>
                         <div class="action">
                             <a href="#!" class="action-link">Sign in</a>
                             <a href="#!" class="btn action-btn">Sign up </a>
                         </div>
                     </nav>
+                </div>
+            </header>
+
+            <!-- =====Hero===== -->
+            <div class="hero-wrap">
+                <div class="content">
                     <div class="hero">
                         <div class="info">
                             <div class="sub-title">
@@ -62,9 +67,9 @@
                         />
                     </div>
                 </div>
-            </header>
+            </div>
             <!-- =======client======= -->
-            <div class="client">
+            <div id="services" class="client">
                 <div class="content">
                     <div class="row">
                         <img src="./assets/img/Logo.svg" alt="Besnik." />
@@ -160,7 +165,7 @@
                 </div>
             </div>
             <!-- ====Featured============ -->
-            <div class="featured">
+            <div id="features" class="featured">
                 <div class="content">
                     <header>
                         <h2 class="sub-title">Featured Properties</h2>
@@ -292,7 +297,7 @@
                     </div>
                 </div>
             </div>
-            <div class="stats">
+            <div id="resources" class="stats">
                 <div class="content">
                     <div class="row">
                         <div class="block-img">
@@ -302,7 +307,7 @@
                                 alt=""
                             />
                             <!-- Trend -->
-                            <div class="trend">
+                            <div  class="trend">
                                 <div class="row">
                                     <strong>40,000+</strong>
                                     <img
@@ -444,7 +449,7 @@
                 </div>
             </div>
             <!-- =====Subscription=== -->
-            <div class="subscription">
+            <div id="contract" class="subscription">
                 <div class="content">
                     <div class="body">
                         <div class="info">

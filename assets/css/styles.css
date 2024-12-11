@@ -4,6 +4,9 @@
 html {
     font-size: 62.5%;
 }
+body ,html {
+    scroll-behavior: smooth;
+}
 body {
     font-size: 1.4rem;
     font-family: "Poppins", sans-serif;
@@ -37,16 +40,23 @@ a {
     overflow: hidden;
 }
 /* Header */
-.header {
+.fixed-header{
     background-color: #e6f0ff;
-    height: 100vh;
-    padding-top: 38px;
+    padding-top: 34px;
+    position:sticky;
+    top:-34px;
+    z-index: 1;
+}
+.hero-wrap {
+    display: flex;
+    background-color: #e6f0ff;
+    height: calc(100vh - 90px);
     position: relative;
 }
 .nav-bar {
     display: flex;
     align-items: center;
-    /* padding:12px 0; */
+    padding:12px 0;
 }
 .nav-bar ul {
     margin-left: 50px;
@@ -80,7 +90,7 @@ a {
     opacity: 0.9;
 }
 .hero {
-    margin-top: 130px;
+    margin-top: 114px;
 }
 .hero .info {
     width: 51%;
@@ -107,8 +117,7 @@ a {
 .info .des {
     color: #5a6473;
     margin-top: 30px;
-    /* width: 550px; */
-    /* font-family: Poppins; */
+    
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
@@ -116,6 +125,7 @@ a {
 }
 .info .cta {
     margin-top: 40px;
+    width: 170px;
 }
 .hero-img {
     position: absolute;
